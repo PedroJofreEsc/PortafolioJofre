@@ -47,8 +47,10 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     width: 90%;
-    font-size: 2em;
-}
+    font-size: 2em;}
+
+
+
 
 :root{
     --clippy:  polygon(0 1%, 0 1%, 0 100%, 0% 100%);
@@ -97,6 +99,7 @@
        0% 100%
      );
   }
+
 
 .navbar a {
     list-style: none;
@@ -311,9 +314,11 @@
 }
 /*animacion*/
 
+
 .tecleado{
     font-family: Calibri;
     color: greenyellow;
+
     width: 0;
     overflow: hidden;
     white-space: nowrap;
