@@ -1,0 +1,150 @@
+/*reseteo  */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/*globales*/
+.bodyIndex {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "section section section"
+        "footer footer footer";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    border: 10px yellow;
+    background-color: bisque;
+    height: 100vh;
+    font-family: Arial;
+}
+
+
+.headerindex {
+
+    border: 10px yellow;
+    grid-area: header;
+    display: flex;
+}
+
+
+.logo {
+
+    width: 30%;
+
+}
+
+.logo img {
+    width: 50%;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 90%;
+    font-size: 2em;
+
+}
+
+.navbar a {
+    list-style: none;
+    margin-left: 5%;
+}
+
+
+
+.footerindex {
+    background-color: blue;
+    border: 1px yellow;
+    grid-area: footer;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footerindex p i{
+    font-size: 500%;
+}
+
+
+/*index*/
+.sectionindex {
+    background-color: black;
+    border: 1px yellow;
+    grid-area: section;
+    background-image: url("./imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 5%;
+    font-size: large;
+}
+
+.sectionindex div {
+    width: 50%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: aliceblue;
+}
+
+.sectionindex div h2 {
+    margin-bottom: 10%;
+    
+}
+@media only screen and (min-width:1240px){
+    .sectionindex{
+        font-size: 2.5em;
+        padding-bottom: 20px;
+        }
+
+}
+/* vista entre desktop y mobile */
+@media only screen and (min-width:375px) and (max-width:768px){
+
+    
+    .sectionindex{
+        font-size: 1em;
+        padding-bottom: 20px;
+        }
+
+    .navbar {
+        flex-wrap: wrap;
+
+        font-size: 1em;
+        
+        }
+    .footerindex p i{
+        font-size: 300%;
+    }
+}
+/*vista desktop */
+
+/*vista mobile*/
+@media only screen and (min-width:0px) and (max-width:375px){
+    .bodyIndex{
+        height: 300px;
+    }
+
+    .sectionindex{
+        font-size: 3em;
+        padding-bottom: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+
+        font-size: 0.8em;
+
+     }
+
+
+    .footerindex p i{
+        font-size: 250%;
+    }
+}

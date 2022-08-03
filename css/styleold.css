@@ -1,0 +1,234 @@
+/*reseteo  */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #39393A;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "section section section"
+        "footer footer footer";
+    grid-template-columns: auto auto auto;
+    border: 1px yellow;
+}
+
+/*estilos globales */
+.cabecera {
+    background-color: #F3A712;
+    position: sticky;
+    top: 0px;
+    padding: 5px;
+    height: 20vh;
+    width: 100%;
+    grid-area: header;
+
+}
+
+.portada {
+    grid-area: section;
+}
+
+.actual {
+    color: azure;
+}
+
+.cabecera__logo {
+    background-color: #f31212;
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+    margin: 0%;
+
+    width: 10%;
+    display: inline;
+
+}
+
+.cabecera__nombre {
+    background-color: #12c6f3;
+    position: sticky;
+    left: 0%;
+    top: 0px;
+    margin: 0%;
+    bottom: 25px;
+    height: 0%;
+    display: inline;
+
+}
+
+
+.cabecera ul {
+    list-style: none;
+}
+
+.cabecera li {
+    display: inline-block;
+    width: 15%;
+    position: relative;
+    font-size: 2rem;
+
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    background-color: #669BBC;
+    padding: 5px;
+
+    grid-area: footer;
+
+}
+
+footer img {
+    height: 30px;
+    margin: 20px;
+
+}
+
+.piePagina__text {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*index*/
+.bodyIndex {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "section section section"
+        "footer footer footer";
+    grid-template-columns: auto auto auto;
+    border: 1px yellow;
+}
+
+.portadaIndex {
+    /*background-color: #E4572E;*/
+    color: aliceblue;
+    background-color: #F3A712;
+    height: 70vh;
+
+    background-image: url("../imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.presentacion {
+    padding-top: 25vh;
+    text-align: center;
+    width: 50%;
+}
+
+.presentacion_intro {
+    margin-left: 10%;
+    margin-top: 3%;
+
+    align-items: center;
+}
+
+/*about*/
+.portadaAbout {
+
+    color: aliceblue;
+    background-color: #39393A;
+    height: 500px;
+    text-align: center;
+
+}
+
+.portadaAbout img {
+    width: 40%;
+    float: center;
+}
+
+.portadaAbout_pre {
+    display: inline-block;
+    width: 100%;
+}
+
+.portadaAbout_pre_nombre {
+
+    width: 20%;
+    overflow: hidden;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: inline-block;
+    margin-bottom: 5%;
+
+}
+
+/*habilidades*/
+.bodySkill {
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.programmingSkill {
+
+    list-style: circle;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.programmingSkill div {
+    display: inline;
+
+}
+
+.programmingSkill ul {
+
+    list-style: circle;
+    float: left;
+    padding-left: 40px;
+    margin-left: 20px;
+
+}
+
+.programmingSkill img {
+    width: 10%;
+}
+
+.softSkills {
+    margin-top: 20px;
+}
+
+.softSkills ul {
+    float: right;
+}
+
+/*trabajo*/
+
+.bodyWork {
+    color: aliceblue;
+
+}
+
+.bodyWork h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bodyWork li {
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+
+/*contacto*/
+
+.bodyContact {
+    text-align: center;
+    color: aliceblue;
+    height: 400px;
+    margin-top: 50px;
+}
