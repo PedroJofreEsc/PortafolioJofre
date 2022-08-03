@@ -1,0 +1,383 @@
+/*reseteo  */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/*globales*/
+.bodyIndex {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "section section section"
+        "footer footer footer";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    border: 10px yellow;
+    background-color: bisque;
+    height: 100vh;
+    font-family: Arial;
+}
+
+
+.headerindex {
+
+    border: 10px yellow;
+    grid-area: header;
+    display: flex;
+}
+
+.actual{
+    color: white;
+}
+.logo {
+
+    width: 30%;
+
+}
+
+.logo img {
+    width: 50%;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 90%;
+    font-size: 2em;
+}
+
+:root{
+    --clippy:  polygon(0 1%, 0 1%, 0 100%, 0% 100%);
+}
+
+.navbarHover:hover{
+    background:black; 
+    transition:color 10s ;
+}
+.d-1 {
+    --c: #1095c1; /* the color */
+    --b: .1em;    /* border length*/
+    --d: 20px;    /* the cube depth */
+    
+    --_s: calc(var(--d) + var(--b));
+    
+    color: var(--c);
+    border: solid #0000;
+    border-width: var(--b) var(--b) var(--_s) var(--_s);
+    background:
+      conic-gradient(at left var(--d)  bottom var(--d),
+        #0000 90deg, rgb(255 255 255 /0.3) 0 225deg,rgb(255 255 255 /0.6) 0) border-box,
+      conic-gradient(at left var(--_s) bottom var(--_s),
+        #0000 90deg,var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b))  border-box;
+    transform: translate(calc(var(--d)/-1),var(--d));
+    clip-path: 
+      polygon(
+       var(--d) 0%, 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)),
+       100% calc(100% - var(--d)),
+       var(--d) calc(100% - var(--d))
+      );
+    transition: 0.5s;
+}
+.d-1:hover {
+    transform: translate(0,0);
+    clip-path: 
+      polygon(
+       0% var(--d), 
+       var(--d) 0%, 
+       100% 0%, 
+       100% calc(100% - var(--d)), 
+       calc(100% - var(--d)) 100%, 
+       0% 100%
+     );
+  }
+
+.navbar a {
+    list-style: none;
+    margin-left: 5%;
+}
+
+
+
+.footerindex {
+    background-color: blue;
+    border: 1px yellow;
+    grid-area: footer;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footerindex p i{
+    font-size: 500%;
+}
+
+
+/*index*/
+.sectionindex {
+    background-color: black;
+    border: 1px yellow;
+    grid-area: section;
+    background-image: url("../imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 5%;
+    font-size: large;
+}
+
+.sectionindex div {
+    width: 50%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: aliceblue;
+}
+
+.sectionindex div h2 {
+    margin-bottom: 10%;
+    
+}
+/*about*/
+.sectionabout{
+    background-color: black;
+    border: 1px yellow;
+    grid-area: section;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 5%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.portada{
+    width: 40%;
+    align-items: stretch;
+
+    text-align: center;
+}
+.portadaImg{
+
+    align-self: flex-end;
+}
+/*
+.portadaAbout_pre_nombre{
+}
+*/
+
+/*habilidades*/
+.sectionskill{
+    padding-top: 5%;
+    background-color: black;
+    border: 1px yellow;
+    grid-area: section;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 5%;
+    font-size: large;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.sectionskill h1{
+    width: 100%;
+
+}
+.programmingSkill{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.programmingSkillImg{
+    width: 50%;
+}
+.skillimg{
+    width: 200px; 
+
+}
+.programmingSkill ul{
+    width: 40%  ;
+    list-style: none;
+
+    font-size: 2em;
+}
+/*trabajos*/
+.sectiontrabajos{
+    padding-top: 5%;
+    background-color: black;
+    border: 1px yellow;
+    grid-area: section;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 5%;
+    font-size: large;
+    color: aliceblue;
+    text-align: center;
+
+
+}
+
+/*contact*/
+.sectioncontact{
+    padding-top: 5%;
+    background-color: black;
+    border: 1px yellow;
+    grid-area: section;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 5%;
+    font-size: large;
+    color: aliceblue;
+    text-align: center;
+
+
+}
+
+.formulario{
+    padding-top: 1%;
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+
+} 
+
+
+
+/*vista desktop*/
+@media only screen and (min-width:768px){
+    .sectionindex{
+        font-size: 2em;
+        padding-bottom: 20px;
+        }
+
+}
+/* vista entre desktop y mobile */
+@media only screen and (min-width:375px) and (max-width:768px){
+
+    
+    .sectionindex{
+        font-size: 1em;
+        padding-bottom: 20px;
+        }
+
+    .navbar {
+        flex-wrap: wrap;
+
+        font-size: 1em;
+        
+        }
+    .footerindex p i{
+        font-size: 300%;
+    }
+    .logo {
+
+        width: 40%;
+    
+    }
+    
+    .logo img {
+        width: 80%;
+    
+    }
+    .portada{
+        width: 100%;
+    }
+    .portada img{
+        width: 10%;
+    }
+    .portada div{
+        width: 90%;
+    }
+}
+/*animacion*/
+
+.tecleado{
+    font-family: Calibri;
+    color: greenyellow;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #18BDEC;
+    animation: blink 1s steps(1) infinite;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 30%;
+    }
+  }
+
+/*vista mobile*/
+@media only screen and (min-width:0px) and (max-width:375px){
+    .bodyIndex{
+        height: 300px;
+    }
+
+    .sectionindex{
+        font-size: 2.5em;
+        padding-bottom: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+
+        font-size: 0.8em;
+
+     }
+
+
+    .footerindex p i{
+        font-size: 250%;
+    }
+
+    .logo {
+
+        width: 40%;
+    
+    }
+    
+    .logo img {
+        width: 80%;
+    
+    }
+
+    .portada{
+        width: 100%;
+        background-color: aqua;
+    }
+    .portada img{
+        width: 10%;
+    }
+    .portada div{
+        width: 90%;
+    }
+}
