@@ -38,11 +38,12 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link disabled" href="./habilidad.html" tabindex="-1"
-                                        aria-disabled="true">Habilidades</a>
+                                    <a class="nav-link active" href="./habilidad.html"
+                                        aria-current="page">Habilidades</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="./contact.html">contact</a>
+                                    <a class="nav-link disabled" href="./contact.html" tabindex="-1"
+                                        aria-disabled="true">contact</a>
                                 </li>
                             </ul>
 
@@ -56,78 +57,72 @@
 
     </header>
 
-    <section class="container-fluid ">
+    <section class="container-fluid text-center ">
         <h1>QUIERES CONTACTARME?</h1>
 
-        <div class="row">
+        <div class="row justify-content-center Formcontact">
 
-        </div>
-        <article class="formulario">
 
-            <form action="#">
-                <div class="row ">
-                    <div class="col-6">
-                        <label for="Nombre">Nombre
-                            <input type="text" placeholder="Nombre">
-                        </label>
-                        
-                        <div class="row bg-light">
-                            <label class="contacto" for="Correo">
-                            <div class="col-2 bg-danger">
-                                <h4>Contacto:</h4>
+            <article class="formulario text-start">
 
-                            </div>
-                            <div class="col-5 bg-danger align-self-center">
-                                <div>
-                                Correo<input type="email" placeholder="abc@correo.cl">
-                            </div>
-                            <div>
-                                Telefono <input type="number" placeholder="+123456789">
-                            </div>
-                            </div>
+                <form class="" action="#">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-12 text-center">
+                            <label for="Nombre">Nombre:
+                                <input type="text" placeholder="Nombre">
                             </label>
+
+                            <div class="row ">
+
+                                <div class="col-auto align-self-center">
+                                    <h4>Contacto:</h4>
+
+                                </div>
+                                <div class="col-auto align-self-start ">
+                                    <label class="contacto" for="Correo"></label>
+                                    <div>
+                                        Correo:<input type="email" placeholder="abc@correo.cl">
+                                    </div>
+                                    <div>
+                                        Telefono: <input type="number" placeholder="+123456789">
+                                    </div>
+                                    </label>
+                                </div>
+
+
+                            </div>
+
+                            <div class="text-center mt-2">
+                                <p>Forma preferida de contacto?</p>
+                                <p>
+                                    Correo<input type="checkbox" name="formacontacto" value="Correo">
+                                    Whatsap<input type="checkbox" name="formacontacto" value="whatsapp">
+                                    Telegram<input type="checkbox" name="formacontacto" value="telegram">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 ">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
 
                         </div>
 
-                        <label class="contacto" for="Correo">Contacto: <br>
-                            Correo<input type="email" placeholder="abc@correo.cl">
-                            Telefono <input type="number" placeholder="+123456789">
-                        </label>
-                    </div>
-                    <div class="col-6">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-
                     </div>
 
-                </div>
-                
-                <br>
-                <label class="contacto" for="Correo">Contacto: <br>
-                    Correo<input type="email" placeholder="abc@correo.cl">
-                    Telefono <input type="number" placeholder="+123456789">
-                </label>
-                <br>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <p>Forma preferida de contacto?</p>
-                <p>
-                    Correo<input type="checkbox" name="formacontacto" value="Correo">
-                    Whatsap<input type="checkbox" name="formacontacto" value="whatsapp">
-                    Telegram<input type="checkbox" name="formacontacto" value="telegram">
-                </p>
 
-
-            </form>
-        </article>
+                </form>
+            </article>
+        </div>
     </section>
     <footer class="container-fluid bg-light">
 
         <div class="row">
 
-            <a href="" class="col 1">Inicio</a>
-            <a href="" class="col 1">about</a>
-            <a href="" class="col 1 nav-link disabled">habilidad</a>
-            <a href="" class="col 1">contact</a>
-            <a href="" class="col 1">trabajos</a>
+            <a href="../index.html" class="col 1">Inicio</a>
+            <a href="./about.html" class="col 1">about</a>
+            <a href="./habilidad.html" class="col 1 ">habilidad</a>
+            <a href="./contact.html" class="col 1 nav-link disabled">contact</a>
+            <a href="./trabajos.html" class="col 1">trabajos</a>
         </div>
         <div class="row text-center">
             <h2>Creado y diseñado por mi </h2>
@@ -136,8 +131,8 @@
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
