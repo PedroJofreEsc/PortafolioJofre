@@ -1,3 +1,53 @@
+/*reseteo  */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.original {
+    background-image: radial-gradient(circle, #505050, #1f1f1f, #000000);
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #50505000;
+}
+
+.original i {
+
+    font-size: 20rem;
+    color: grey;
+    transform: rotate(180deg);
+}
+
+
+
+.original i:hover {
+    transition: color 5s;
+    color: yellow;
+}
+
+.original p {
+    margin-top: 2%;
+    font-size: large;
+
+}
+
+.originallink {
+    color: #50505000;
+    width: 30%;
+}
+
+.originallink:hover {
+    transition: color 5s;
+    color: yellow;
+}
+
 i {
 
     font-size: calc(8vw);
@@ -34,6 +84,10 @@ body {
 footer {
     margin-top: 5%;
     opacity: 0.6;
+}
+
+.Formcontact {
+    padding-top: 3%;
 }
 
 /*animacion*/
