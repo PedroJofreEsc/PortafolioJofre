@@ -20,7 +20,7 @@
 
 .original i {
 
-    font-size: 20rem;
+    font-size: 19rem;
     color: grey;
     transform: rotate(180deg);
 }
@@ -90,11 +90,23 @@ footer {
     padding-top: 3%;
 }
 
+
+/*vista mobile*/
+@media only screen and (min-width:375px) and (max-width:768px) {
+
+    .original i {
+
+        font-size: 10rem;
+        color: grey;
+        transform: rotate(180deg);
+    }
+}
+
 /*animacion*/
 
 .tecleado {
     font-family: Calibri;
-    color: greenyellow;
+    color: rgb(16, 17, 14);
     width: 0;
     overflow: hidden;
     white-space: nowrap;
