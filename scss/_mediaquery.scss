@@ -1,0 +1,9 @@
+
+/*vista mobile*/
+@media only screen and (min-width:375px) and (max-width:768px) {
+
+    .ampolleta--apagada {
+
+        font-size: map-get($ancho, ampolleta_apagada_mobile);
+    }
+}
