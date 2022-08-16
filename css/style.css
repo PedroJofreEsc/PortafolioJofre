@@ -1,10 +1,9 @@
-/*reseteo  */
 * {
     padding: 0%;
     margin: 0%;
-}
-
-.original {
+  }
+  
+  .original {
     background-image: radial-gradient(circle, #505050, #1f1f1f, #000000);
     z-index: 2;
     height: 100vh;
@@ -12,62 +11,53 @@
     display: flex;
     position: absolute;
     align-items: center;
-    align-items: center;
     justify-content: center;
     text-align: center;
-    color: #50505000;
-}
-
-.original i {
-
+    color: rgba(80, 80, 80, 0);
+  }
+  .original .ampolleta--apagada {
     font-size: 19rem;
     color: grey;
     transform: rotate(180deg);
-}
-
-
-
-.original i:hover {
+  }
+  .original .ampolleta--apagada:hover {
     transition: color 5s;
     color: yellow;
-}
-
-.original p {
-    margin-top: 2%;
+  }
+  .original p {
+    margin-top: 5%;
     font-size: large;
-
-}
-
-.originallink {
-    color: #50505000;
-    width: 30%;
-}
-
-.originallink:hover {
+  }
+  .original .originallink:hover {
     transition: color 5s;
     color: yellow;
-}
-
-i {
-
-    font-size: calc(8vw);
+  }
+  
+  .ampolleta--prendida {
+    font-size: 8vh;
     color: yellow;
     text-align: center;
-}
-
-i:hover {
+  }
+  .ampolleta--prendida:hover {
     transition: color 5s;
     color: grey;
-}
-
-body {
+  }
+  
+  .foto {
+    font-size: 8vw;
+    color: yellow;
+    text-align: center;
+  }
+  
+  body {
     background-image: linear-gradient(to right bottom, #ffffff, #fff5ff, #ffe9ee, #ffe1d0, #ffe1b2, #fddd9b, #f9da83, #f1d86b, #f3c851, #f7b739, #fba41f, #ff9000);
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
-}
-
-.bodyindex {
+    min-height: 100vh
+  }
+  
+  .bodyindex {
     background-image: radial-gradient(circle, #505050, #1f1f1f, #000000);
     z-index: 2;
     height: 100vh;
@@ -75,58 +65,67 @@ body {
     display: flex;
     position: absolute;
     align-items: center;
-    align-items: center;
     justify-content: center;
     text-align: center;
-    color: #50505000;
-}
+    color: rgba(80, 80, 80, 0);
+  }
+  section{
+    min-height: 100vh;
+  }
 
-footer {
+  footer {
     margin-top: 5%;
     opacity: 0.6;
-}
-
-.Formcontact {
-    padding-top: 3%;
-}
-
-
-/*vista mobile*/
-@media only screen and (min-width:375px) and (max-width:768px) {
-
-    .original i {
-
-        font-size: 10rem;
-        color: grey;
-        transform: rotate(180deg);
-    }
-}
-
-/*animacion*/
-
-.tecleado {
+  }
+  
+  .Formcontact {
+    padding-top: 5%;
+  }
+  
+  /*animacion*/
+  .tecleado {
     font-family: Calibri;
     color: rgb(16, 17, 14);
-    width: 0;
+    width: 0%;
     overflow: hidden;
     white-space: nowrap;
-    border-right: .15em solid #18BDEC;
-    animation: blink 1s steps(1) infinite;
-    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
-}
-
-@keyframes blink {
+    border-right: 0.15em solid #18BDEC;
+    -webkit-animation: blink 1s steps(1) infinite;
+            animation: blink 1s steps(1) infinite;
+    -webkit-animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+            animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+  }
+  
+  @-webkit-keyframes blink {
     50% {
-        border-color: transparent;
+      border-color: transparent;
     }
-}
-
-@keyframes typing {
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes typing {
     from {
-        width: 0;
+      width: 0%;
     }
-
     to {
-        width: 40%;
+      width: 40%;
     }
-}
+  }
+  @keyframes typing {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 40%;
+    }
+  }
+  /*vista mobile*/
+  @media only screen and (min-width: 375px) and (max-width: 768px) {
+    .ampolleta--apagada {
+      font-size: 10rem;
+    }
+  }/*# sourceMappingURL=style.css.map */

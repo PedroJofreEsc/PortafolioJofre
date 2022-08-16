@@ -1,0 +1,104 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.original{
+
+    background-image: radial-gradient(circle, #505050, #1f1f1f, #000000);
+    z-index: 2;
+    height: 100vh;
+    width: map-get($ancho,full) ;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #50505000;
+
+    .ampolleta--apagada {
+        font-size: map-get($ancho, ampolleta_apagada_desktop);
+        color: grey;
+        transform: rotate(180deg);
+
+
+        &:hover{
+            @include encendido_apagado(5s,yellow);
+        }
+    }
+    p {
+        margin-top: $espacio_Caja;
+        font-size: large;
+
+    }
+    .originallink {
+        width: map-get($ancho,30);
+        
+        &:hover{
+            @include encendido_apagado(5s,yellow);
+        }
+    }
+}
+
+
+.ampolleta--prendida{
+    font-size: map-get($ancho, ampolleta_encendida);
+    color: yellow;
+    text-align: center;
+    &:hover{
+        @include encendido_apagado(5s,grey);
+    }
+}
+
+.foto{
+    font-size: 8vw;
+    color: yellow;
+    text-align: center;
+}
+
+
+body {
+    background-image: linear-gradient(to right bottom, #ffffff, #fff5ff, #ffe9ee, #ffe1d0, #ffe1b2, #fddd9b, #f9da83, #f1d86b, #f3c851, #f7b739, #fba41f, #ff9000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.bodyindex {
+    background-image: radial-gradient(circle, #505050, #1f1f1f, #000000);
+    z-index: 2;
+    height: 100vh;
+    width: map-get($ancho,full);
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #50505000;
+}
+
+footer {
+    margin-top: $espacio_Caja;
+    opacity: 0.6;
+}
+
+.Formcontact {
+    padding-top: $espacio_Caja;
+}
+
+
+
+/*animacion*/
+
+.tecleado {
+    font-family: Calibri;
+    color: rgb(16, 17, 14);
+    width: map-get($ancho,inicio_teclear);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #18BDEC;
+    animation: blink 1s steps(1) infinite;
+    animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+

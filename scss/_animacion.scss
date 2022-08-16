@@ -1,0 +1,16 @@
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: map-get($ancho,inicio_teclear);
+    }
+
+    to {
+        width: map-get($ancho,final_teclear);
+    }
+}
